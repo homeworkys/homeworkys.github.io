@@ -116,7 +116,7 @@ function loadHomeworkTable() {
         row.insertCell(2).innerText = homeworkData.subject;
 
         if (homeworkData.date === formatDate(new Date(new Date().setDate(new Date().getDate() + 1)))) {
-            row.style.background = "lightblue";
+            row.style.background = "#F95454";
         }
 
         // Add a "Done" button for each homework
