@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homeworky</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+</head>
+<body onload="loadHomeworkTable(), refreshClassSelectors()">
+    <h1>Homeworky dashboard</h1>
+
+    <div class="section">
+        <h2>Your homeworks</h2>
+        <button onclick="loadHomeworkTable()">Refresh</button>
+        <button onclick="getHomeworkForTomorrow()">Send reminder</button>
+        <table id="homeworktable">
+            <tr>
+                <th>Task</th>
+                <th>Date</th>
+                <th>Subject</th>
+                <th>Manage</th>
+            </tr>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>Add homework</h2>
+        <p>Describe your task</p>
+        <input type="text" id="homework_name">
+        <p>Add a date</p>
+        <input type="date" id="homework_date">
+        <p>Class</p>
+        <select id="homework_subject">
+        </select>
+        <button onclick="addHomework()">Add homework</button>
+    </div>
+
+    <div class="section">
+        <h2>Mange classes</h2>
+        <p>Enter classes name</p>
+        <input type="text" id="class">
+        <button onclick="addClass()">Add class</button>
+        <button onclick="deleteClass()">Delete class</button>
+        <button onclick="deleteClasses()">Delete everything</button>
+    </div>
+</body>
+</html>
