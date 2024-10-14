@@ -37,6 +37,17 @@ p {
     margin-bottom: 8px;
 }
 
+input[type="date"],
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
 input[type="text"],
 input[type="date"],
 select {
@@ -100,18 +111,6 @@ tr:hover {
 
 input, select, textarea {
     font-size: 16px;
-}
-
-
-input[type="date"],
-input[type="number"],
-input[type="time"],
-input[type="email"],
-input[type="url"],
-input[type="text"] {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
 }
 
 @media (max-width: 600px) {
